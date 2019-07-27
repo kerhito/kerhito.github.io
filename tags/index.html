@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     
     
-    <title>归档 | Kerhito的博客</title>
+    <title>tags | Kerhito的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="keywords" content>
@@ -110,14 +110,14 @@
               </a>
             </li>
         
-            <li class="">
+            <li class=" active">
               <a href="/tags"  >
                 <i class="icon icon-lg icon-tags"></i>
                 标签
               </a>
             </li>
         
-            <li class=" active">
+            <li class="">
               <a href="/archives"  >
                 <i class="icon icon-lg icon-archives"></i>
                 归档
@@ -136,7 +136,7 @@
           <i class="icon icon-lg icon-navicon"></i>
         </a>
         <div class="flex-col header-title ellipsis">
-            <span>归档</span>
+            <span>标签</span>
             
         </div>
         
@@ -146,21 +146,28 @@
         
     </div>
 </header>
-<header class="content-header archives-header">
+<header class="content-header tags-header">
     <img src="/img/banner.jpg" class="header-bg">
     <div class="container fade-scale">
-        <h1 class="title">归档</h1>
+        <h1 class="title">标签</h1>
         <h5 class="subtitle">
             
         </h5>
         
-        <div class="remind">
-            <p>总计文章( <span>2</span> )篇，约( <span>0.5K</span> )字</p>
-            <p>Keep moving😎!!!</p>
-        </div>
-        
     </div>
     
+<div class="tabs-bar container">
+    <nav class="tags-list">
+        <a href="/tags" style="-webkit-order:-1;order:-1" class="tags-list-item waves-effect waves-button waves-light
+             active">全部</a>
+        
+    </nav>
+    <!-- PC show more-->
+    <div class="tags-list-more">
+        <a href="javascript:;" class="action tags-list-item waves-effect waves-circle waves-light"><i class="icon icon-ellipsis-h"></i></a>
+    </div>
+</div>
+
 
 </header>
 
@@ -179,58 +186,6 @@
 
 <div class="container body-wrap fade">
     
-                <h3 class="archive-separator">July, 2019</h3>
-                <div class="waterfall">
-            
-        <div class="waterfall-item">
-  <article class="article-card archive-article">
-    <div class="post-meta">
-      <time class="post-time" title="2019-07-21 12:18:01" datetime="2019-07-21T12:18:01.000Z"  itemprop="datePublished">2019-07-21</time>
-
-      
-
-
-    </div>
-    
-
-
-  
-    <h3 class="post-title " itemprop="name">
-      <a class="post-title-link" href="/2019/07/21/第一篇博客/">第一篇博客</a>
-    </h3>
-  
-
-
-
-    
-  </article>
-</div>
-        
-        <div class="waterfall-item">
-  <article class="article-card archive-article">
-    <div class="post-meta">
-      <time class="post-time" title="2019-07-21 11:36:36" datetime="2019-07-21T11:36:36.663Z"  itemprop="datePublished">2019-07-21</time>
-
-      
-
-
-    </div>
-    
-
-
-  
-    <h3 class="post-title " itemprop="name">
-      <a class="post-title-link" href="/2019/07/21/hello-world/">Hello World</a>
-    </h3>
-  
-
-
-
-    
-  </article>
-</div>
-        
-    </div>
     
 </div>
 
@@ -298,7 +253,7 @@
     <ul class="reset share-icons">
       
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=kerhito.com/archives/&title=Kerhito的博客&pic=kerhito.com/img/avatar.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=kerhito.com/tags/&title=《tags》 — Kerhito的博客&pic=kerhito.com/img/avatar.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -310,7 +265,7 @@
       </li>
       
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=kerhito.com/archives/&title=Kerhito的博客&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=kerhito.com/tags/&title=《tags》 — Kerhito的博客&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -322,7 +277,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAAAAAAZai4+AAABUklEQVR42u3aMRLEIAxDUe5/adKmgZFlUgR9qszuDLwmhsiMIY/5Gqvf3/+ung8PWLAuYs3tWLFW0NX8+lqwYCWzlOn0Jfe/7OeBBQuWwlIWU7ZwWLBgnSoQ+w3YKzSwYCWz9KmVkqFs3sfO8rBgXcHSU53+8yf5FixYP2fN4qhu59MasGClsfQX2NvIq7EvLFiZrP7BV4mW9A9aWLCSWV6rstOGMW83wIIVw9ovqZSSw8kWLFgBLC+i7bRkzFAJFqxIVvXaQf8C0LGreLBg/ZZVvSigv+TVojOULAoWrDCW/omrFIXyVyosWJEsfZl+K8Xs+cCCdSnLuwpQLSj6xQVYsDJZ3gvciZyq2zksWDksvSjooa0XOcGCBetUmNvvm8CCBavasPQO3J8UCFiwIlnVYLe8YcOCFcmqhkdeK6UQBMOCFcbyDrheIRhnByxYN7AejMZU7JthhXkAAAAASUVORK5CYII=" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAAAAAAZai4+AAABWklEQVR42u3aQQ6DMBBDUe5/abotQgR7hiJ1/LOqaEseiySDk22T235q5+vfV66+fbjBgjWItS/bugOly6v7XPUFC1YyS7mdMuyVKWPdFyxYsBSWu4TDggXrzQlCX/JhwYLVKZrdf71Uy8OCNYKlpzr9zz/Jt2DB+nPWbjZlwNfufLgDLFhhLDeW/XXsCwtWJqtW4Covn+5W6OEzLFiRrFqk6752GqUzLFhhLH14r0tkhWtHSLBghbH06UA/WKBfKSZYsGCNZikDW4+K3Ae42fmBBWs0y12AlQdwR7qUXcGCFcCqRUKdMPdm4oAFK5LViYT6h3hulmpYsEazOgcOdIQdP8GCFcaqDWD3kIESEG+1BgvWIJZ78M4toN1HggUrmeUmOfpvats5sGDBqi237rbKwxMELFhhLL2wrm2CwoKVzHLDo9qRAiNgggUrjNUvcGsvwA80WLAmsD5aJZykifKywgAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 
