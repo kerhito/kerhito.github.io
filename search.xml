@@ -139,23 +139,23 @@
 <ul>
 <li><h4 id="refind"><a href="#refind" class="headerlink" title="refind"></a>refind</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S refind-efi</span><br></pre></td></tr></table></figure>
 
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">refind-install</span><br></pre></td></tr></table></figure>
+
 
 </li>
 </ul>
-<pre><code><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">refind-install</span><br></pre></td></tr></table></figure></code></pre><ul>
+<ul>
 <li><h4 id="grub"><a href="#grub" class="headerlink" title="grub"></a>grub</h4><p>安装工具</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S dosfstools grub efibootmgr</span><br></pre></td></tr></table></figure>
 
+<p>安装grub</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grub-install --target=x86_64-efi --efi-directory=/boot/efi --recheck</span><br></pre></td></tr></table></figure>
+
+<p>配置grub</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grub-mkconfig -o /boot/grub/grub.cfg</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
-<p>  安装grub</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grub-install --target=x86_64-efi --efi-directory=/boot/efi --recheck</span><br></pre></td></tr></table></figure>
-
-
-<p>  配置grub</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grub-mkconfig -o /boot/grub/grub.cfg</span><br></pre></td></tr></table></figure>
-
 <h3 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h3><p>安装网络连接的包</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S iw wpa_supplicant dialog dhcp-client</span><br></pre></td></tr></table></figure>
 
