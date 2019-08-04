@@ -4,7 +4,7 @@
     
     <entry>
       <title><![CDATA[ArchLinux安装笔记]]></title>
-      <url>/ArchLinuxInstallnation/</url>
+      <url>/ArchLinux-Installnation/</url>
       <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>前不久在大佬<a href="blog.weearc.top">weearc</a>的指导下完成了arch Linux的安装。我电脑现在是win10和arch双系统。为了以后方便，我就做了个记录。这也算是个笔记、教程，方便自己以后查阅，也欢迎大家安装时做个参考。这个笔记或者教程我会尽可能写的详细，也会把自己安装过程遇到的坑告诉大家。如果这篇教程有什么不清楚甚至是错误的地方，欢迎大家指出来告诉我，不胜感激。<a id="more"></a></p>
 <hr>
 <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="磁盘准备"><a href="#磁盘准备" class="headerlink" title="磁盘准备"></a>磁盘准备</h3><p>在Windows下，右键此电脑，管理，存储，磁盘管理，可以在这里压缩卷或者删除不用的分区，使得硬盘有一块未分配的空间，我这里预留的100G大家可以自行选择大小。</p>
