@@ -343,18 +343,15 @@
 
 </li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">refind-install</span><br></pre></td></tr></table></figure>
-
-
-<ul>
+<pre><code><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">refind-install</span><br></pre></td></tr></table></figure></code></pre><ul>
 <li><h4 id="grub"><a href="#grub" class="headerlink" title="grub"></a>grub</h4><p>安装工具</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S dosfstools grub efibootmgr</span><br></pre></td></tr></table></figure>
 
 
 </li>
 </ul>
-<p>安装grub</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grub-install --target=x86_64-efi --efi-directory=/boot/efi --recheck</span><br></pre></td></tr></table></figure>
+<p>  安装grub</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grub-install --target=x86_64-efi --efi-directory=/boot/efi --recheck</span><br></pre></td></tr></table></figure>
 
 
 <p>  配置grub</p>
@@ -380,26 +377,23 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S plasma</span><br></pre></td></tr></table></figure>
 
 
+
 </li>
 </ul>
 <p>安装kde的终端模拟器</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S konsole</span><br></pre></td></tr></table></figure>
 
-
 <p>  文件管理器</p>
   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S dolphin</span><br></pre></td></tr></table></figure>
 
-
 <p>  启用 sddm显示管理器</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl <span class="built_in">enable</span> sddm</span><br></pre></td></tr></table></figure>
-
 
 <p>  启用网络管理</p>
   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl <span class="built_in">enable</span> NetworkManager</span><br></pre></td></tr></table></figure>
 
 <p>  安装 网络管理的前端工具（图形界面）</p>
   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S plasma-nm</span><br></pre></td></tr></table></figure>
-
 
 <p>重启</p>
   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure>
@@ -409,19 +403,17 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S gnome</span><br></pre></td></tr></table></figure>
 
 
+
 </li>
 </ul>
 <p>安装gnome桌面优化工具</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S gnome-tweak-tool</span><br></pre></td></tr></table></figure>
 
-
 <p>  安装gnome桌面菜单编辑器</p>
   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S alacarte</span><br></pre></td></tr></table></figure>
 
-
 <p>  启用gdm</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl <span class="built_in">enable</span> gdm</span><br></pre></td></tr></table></figure>
-
 
 <p>  启用网络管理</p>
   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl <span class="built_in">enable</span> NetworkManager</span><br></pre></td></tr></table></figure>
@@ -481,7 +473,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2019-08-04T18:25:40.826Z" itemprop="dateUpdated">2019-08-04 18:25:40</time>
+    Last updated: <time datetime="2019-08-04T18:53:45.423Z" itemprop="dateUpdated">2019-08-04 18:53:45</time>
 </span><br>
 
 
