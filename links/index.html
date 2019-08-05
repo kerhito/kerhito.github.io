@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     
     
-    <title>归档: 2019/7 | Kerhito的博客</title>
+    <title>友链 | Kerhito的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="keywords" content>
@@ -117,14 +117,14 @@
               </a>
             </li>
         
-            <li class=" active">
+            <li class="">
               <a href="/archives"  >
                 <i class="icon icon-lg icon-archives"></i>
                 归档
               </a>
             </li>
         
-            <li class="">
+            <li class=" active">
               <a href="/links"  >
                 <i class="icon icon-lg icon-link"></i>
                 友链
@@ -143,7 +143,7 @@
           <i class="icon icon-lg icon-navicon"></i>
         </a>
         <div class="flex-col header-title ellipsis">
-            <span>归档</span>
+            <span>友链</span>
             
         </div>
         
@@ -153,18 +153,13 @@
         
     </div>
 </header>
-<header class="content-header archives-header">
+<header class="content-header page-header">
     <img src="/img/banner.jpg" class="header-bg">
     <div class="container fade-scale">
-        <h1 class="title">归档</h1>
+        <h1 class="title">友链</h1>
         <h5 class="subtitle">
             
         </h5>
-        
-        <div class="remind">
-            <p>总计文章( <span>2</span> )篇，约( <span>4.6K</span> )字</p>
-            <p>Keep moving😎!!!</p>
-        </div>
         
     </div>
     
@@ -184,37 +179,188 @@
     <div id="local-search-result"></div>
 </div>
 
-<div class="container body-wrap fade">
+
+<div class="container body-wrap ">
+<style>
+    .md-links {
+        min-height: calc(100% - 120px - 5pc - 6em);
+        text-align: center;
+        overflow: auto;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 320px;
+    }
+
+    @media screen and (min-width: 680px) {
+        .md-links {
+            max-width: 640px;
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        .md-links {
+            max-width: 960px;
+        }
+    }
+
+    @media screen and (min-width: 1320px) {
+        .md-links {
+            max-width: 1280px;
+        }
+    }
+
+    @media screen and (min-width: 1640px) {
+        .md-links {
+            max-width: 1600px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .md-links {
+            min-height: calc(100% - 200px - 5pc - 6em);
+            margin-top: 6em;
+        }
+    }
+
+    .md-links-item {
+        background: #fff;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+        height: 72px;
+        line-height: 15px;
+        margin: 20px 10px;
+        padding: 0px 0px;
+        transition: box-shadow 0.25s;
+    }
+
+    .md-links a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .md-links li {
+        width: 300px;
+        float: left;
+        list-style: none;
+    }
+
+    .md-links-item img {
+        float: left;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 11px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    }
+
+    .md-links-item:hover {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .md-links-item a:hover{
+        cursor: pointer;
+    }
+
+    .md-links-title {
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    #scheme-Paradox .mdl-mini-footer{
+        clear: left;
+    }
+    #bottom{
+        position: relative;
+    }
+</style>
+
+<ul class="md-links">
     
-                <h3 class="archive-separator">July, 2019</h3>
-                <div class="waterfall">
-            
-        <div class="waterfall-item">
-  <article class="article-card archive-article">
-    <div class="post-meta">
-      <time class="post-time" title="2019-07-21 11:36:36" datetime="2019-07-21T11:36:36.663Z"  itemprop="datePublished">2019-07-21</time>
-
-      
-
-
-    </div>
-    
-
-
-  
-    <h3 class="post-title " itemprop="name">
-      <a class="post-title-link" href="/hello-world/">Hello World</a>
-    </h3>
-  
-
-
-
-    
-  </article>
-</div>
         
-    </div>
+            <li class="md-links-item">
+                <a href="https://purefkh.xyz/" title="purefkh" target="_blank">
+                    <img src="https://purefkh.xyz/img/avatar.jpeg" alt="purefkh" height="72px"/>
+                    <span class="md-links-title">purefkh</span><br />
+                    <span>Fiat Lux</span>
+                </a>
+            </li>
+        
+            <li class="md-links-item">
+                <a href="http://blog.weearc.top/" title="weearc" target="_blank">
+                    <img src="https://purefkh-blog-1256555660.cos.ap-chengdu.myqcloud.com/blog/img/links/weearc.jpg" alt="weearc" height="72px"/>
+                    <span class="md-links-title">weearc</span><br />
+                    <span>折腾党</span>
+                </a>
+            </li>
+        
     
+</ul>
+
+<script type="text/ls-javascript" id="page-links-script">
+    var adjustFooter = function() {
+        if( ($('#bottom').offset().top + $('#bottom').outerHeight() )<$(window).height() ) {
+            var footerBottom = $(window).height() - $('#bottom').outerHeight() - $('#bottom').offset().top;
+            $('#bottom').css('bottom', '-' + footerBottom + 'px');
+        }
+    };
+    $(document).ready(function() {
+        adjustFooter();
+    });
+</script>
+
+
+    <article class="page-article fade" itemprop="blogPage">
+        <div class="post-content page-content" id="page-content" itemprop="pageContent">
+            
+            
+        </div>
+        
+        
+        <div class="card page-about-me flex-row">
+            <a href="/" class="avatar waves-effect waves-circle waves-light"><img src="/img/avatar.png"></a>
+            <div class="content flex-col">
+                <p><strong>Kerhito</strong></p>
+                <p><em></em></p>
+                <p></p>
+	    </div>
+            <div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=kerhito.com/links/&title=《友链》 — Kerhito的博客&pic=kerhito.com/img/avatar.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=kerhito.com/links/&title=《友链》 — Kerhito的博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+        </div>
+        
+        
+        <div class="card">
+           
+
+
+        </div>
+        
 </div>
 
     </main>
@@ -281,7 +427,7 @@
     <ul class="reset share-icons">
       
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=kerhito.com/archives/2019/07/&title=Kerhito的博客&pic=kerhito.com/img/avatar.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=kerhito.com/links/&title=《友链》 — Kerhito的博客&pic=kerhito.com/img/avatar.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -293,7 +439,7 @@
       </li>
       
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=kerhito.com/archives/2019/07/&title=Kerhito的博客&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=kerhito.com/links/&title=《友链》 — Kerhito的博客&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -305,7 +451,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABwUlEQVR42u3aS2rEMBAFQN//0pNtYLB53S0pDpRWg/FYpY3o33XF6/NrfT/5Xvl/rx0LFxd3zE02fgbNv5MfHhcX9yT3bvu7d54vpuS/z+/cPsfFxX0ld37ZJUfCxcX9j9xenvJnFxkuLm6LmyQt0edax96Sq+Hi4g64+ZW07/eW+i4uLm6L+ymuPHxJ0qHy7ri4uEe41TClWgpJmi7V5i4uLu4Zbt4gyaOOamOmmlDh4uLu5s5HpvIAJW/WRiEOLi7uZu6qIYx8OKM6tIGLi3uem49QPNOrh89LMLi4uOe5yau98seq9gwuLu4ZbjIy1SuC5IFUvhcuLu55bkJfVeao1kJxcXHfxu0Nb+UJUj6igYuLe4abpyLV4aresMWo1YqLi7uUmzc5quhqkDTqCePi4m7j5oh5u7RXnMXFxT3PzRsqvUJqEuiUYzFcXNyl3E9x9TbOA6Or+jlcXNwN3GqRYt5kzS/HSUkFFxd3zs2TnORzk2JKFDDh4uIe5E6aK3kYVE1+ylUcXFzc13Cr0dNo/AIXF/eV3Gpw0zvM7RNcXNyD3N7YRH7UhBu1aXFxcY9wq+XOVYNcvQsRFxd3M/cHSv+5aD6m18oAAAAASUVORK5CYII=" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAAAAAAZai4+AAABV0lEQVR42u3aUbLDIAhA0ex/0+kCWp0L2HYC1683b1I9+VAIeF143ItRefLAkCWrEevejvdnVv/Zz8/XkiVrMotMRxZbLc/XkiVLFmGtiKutLkuWrF+y9oeFLFmyCIskzeRl/pDLy5LVgpWbOvf3V+pbsmQ9nHUHx36G3JwfVpElaxiLb+Bo8I6GYVmyZEWn3heMeGMmENRlyRrD4h+oJDAfy+hlyRrA4mkxx/EGTKCyJUvWABbZ6tHiLJmhVAOWJasRi5eEeICvHx+yZM1k5S7hcTr56C29sSxZTVnR5kr0ZdDBIUvWSNapj9hccrwM1bJkDWBVLhxUnpQlSxbOcpMXDqJNzWQvSJasdiyy1SvpL7mIgDIIWbIGsKKFpMqVO5Rky5IlC4fYUwfHgUqzLFkjWbxlQpKAYweELFkPZ/Ef8xAe7VrKkjWZFU1wc2G4VMeSJasz6wUkNcVtr7EXwAAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 
